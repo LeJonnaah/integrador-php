@@ -130,3 +130,25 @@
     font-weight: 100;
     color: gray;
 }
+
+.main-footer {
+    background-color: #1e5170;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-footer__links {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.main-footer__link {
+    text-decoration: none;
+    color: #fff;
+    max-width: 20px
+}
