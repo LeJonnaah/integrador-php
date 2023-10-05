@@ -79,3 +79,25 @@
 .card-title {
     margin-bottom: 20px !important;
 }
+
+.honolulu-section {
+    display: flex;
+    flex-basis: 40%;
+    max-width: 100%;
+    margin-top: 30px;
+    max-height: 600px;
+}
+
+.honolulu-section > img {
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.honolulu-section__right {
+    background-color: #353a40;
+    color: #fff;
+    max-width: 100%;
+    padding: 20px;
+    border-left: 1px solid #fff;
+}
