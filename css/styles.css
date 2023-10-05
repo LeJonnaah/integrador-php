@@ -61,7 +61,8 @@
     gap: 40px;
 }
 
-.speakers-section__title {
+.speakers-section__title,
+.become-section__title {
     margin-top: 10px;
     text-align: center;
     margin-bottom: 40px;
@@ -70,7 +71,8 @@
     text-transform: uppercase;
 }
 
-.speakers-section__title-span {
+.speakers-section__title-span, 
+.become-section__title-span {
     display: block;
     font-size: 30px;
     font-weight: 700;
@@ -100,4 +102,31 @@
     max-width: 100%;
     padding: 20px;
     border-left: 1px solid #fff;
+}
+
+.become-section {
+    text-align: center;
+    max-width: 60%;
+    margin: 30px auto;
+}
+
+.become-section__link {
+    color: #000;
+}
+
+.input-group {
+    gap:20px;
+}
+
+#send-button {
+    width: 100%;
+    background-color: #96c93e;
+    border-color: #96c93e;
+}
+
+.form-label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 100;
+    color: gray;
 }
