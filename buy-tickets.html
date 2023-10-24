@@ -43,7 +43,28 @@
     </header>
 
     <main>
-        <div >
+        <section class="categories">
+            <div class="categories__card">
+                <h3>Estudiante</h3>
+                <p>Tiene un descuento</p>
+                <span class="categories__discount">80%</span>
+                <span class="categories__documentation">* presentar documentación</span>
+            </div>
+            <div class="categories__card">
+                <h3>Trainee</h3>
+                <p>Tiene un descuento</p>
+                <span class="categories__discount">50%</span>
+                <span class="categories__documentation">* presentar documentación</span>
+            </div>
+            <div class="categories__card">
+                <h3>Junior</h3>
+                <p>Tiene un descuento</p>
+                <span class="categories__discount">15%</span>
+                <span class="categories__documentation">* presentar documentación</span>
+            </div>
+        </section>
+        
+        <div class="ticket-form">
             <h1>Venta</h1>
             <h2>Valor de ticket $<span></span></h2>
             <form>
@@ -62,9 +83,13 @@
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-6">
-                        <input type="number" class="form-control" id="inputQuantity" placeholder="Cantidad" min="1" max="10" required>
+                        <div class="form-group">
+                            <label for="inputQuantity" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="inputQuantity" placeholder="Cantidad" min="1" max="10" required>
+                        </div>
                     </div>
                     <div class="col-md-6">
+                        <label for="inputCategory" class="form-label">Categoría</label>
                         <select class="form-select" id="inputCategory" required>
                             <option value="" disabled selected hidden>Selecciona una categoría</option>
                             <option value="general">Estudiante</option>
@@ -73,8 +98,13 @@
                         </select>
                     </div>
                 </div>
-                <button type="reset" class="btn btn-success">Borrar</button>
-                <button type="submit" class="btn btn-success">Resumen</button>
+                <div class="ticket-form__total">
+                    <h4 class="ticket-form__total-title">Total a pagar: $<span></span></h4>
+                </div>
+                <div class="ticket-form__buttons">
+                    <button type="reset" class="ticket-form__button btn btn-success">Borrar</button>
+                    <button type="submit" class="ticket-form__button btn btn-success">Resumen</button>
+                </div>
             </form>
         </div>
     </main>

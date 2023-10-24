@@ -152,3 +152,72 @@
     color: #fff;
     max-width: 20px
 }
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.categories__card {
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.categories__card:nth-child(1) {
+    border: 2px #007bfe solid;
+}
+
+.categories__card:nth-child(2) {
+    border: 2px #21a4b8 solid;
+}
+
+.categories__card:nth-child(3) {
+    border: 2px #ffc40e solid;
+}
+
+.categories__discount {
+    display: block;
+    font-weight: bold;
+}
+
+.categories__documentation {
+    margin-top: 20px;
+    display: block;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.ticket-form {
+    margin: 20px 120px;
+}
+
+.ticket-form__total {
+    background-color: #cce5ff;
+    border-radius: 5px;
+    margin: 20px auto;
+    color: #195294;
+}
+
+.ticket-form__total-title {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 20px;
+}
+
+.ticket-form__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.ticket-form__button {
+    width: 100%;
+    background-color: #97c93e !important;
+    border-color: #97c93e !important;
+}
