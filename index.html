@@ -128,15 +128,17 @@
         <section class='become-section'>
             <h2 class="become-section__title">Conviértete en un <span class="become-section__title-span"> orador</span></h2>
             <p>Anótate como orador para dar una <a href="#" class="become-section__link">charla ignite</a>. Cuéntanos de qué quieres hablar!</p>
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="Username">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Server">
-            </div>
-            <div class="mb-3">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
-                <label for="exampleFormControlTextarea1" class="form-label">Recuerda incluir un título para tu charla</label>
-            </div>
-            <button type="button" id="send-button" class="btn btn-success">Enviar</button>
+            <form action="php/formulario.php" method="post">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" name="nombre" required>
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Server" name="apellido" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?" name="tema" required></textarea>
+                    <label for="exampleFormControlTextarea1" class="form-label">Recuerda incluir un título para tu charla</label>
+                </div>
+                <button type="submit" id="send-button" class="btn btn-success">Enviar</button>
+            </form>
         </section>
     </main>
 
