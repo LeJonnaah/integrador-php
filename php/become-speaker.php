@@ -6,8 +6,6 @@ $apellido = $_POST['apellido'];
 
 $tema = $_POST['tema'];
 
-$conexion = mysqli_connect("localhost", "root", "root", "integradorphp");
-
 
 if ($nombre == "" || $apellido == "" || $tema == "") {
     echo "Error, debe completar todos los campos";

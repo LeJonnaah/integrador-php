@@ -11,38 +11,7 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <img src="img/codoacodo.png" width="150px" alt="logo" class="logo">
-                <a class="navbar-brand" href="#">Conf Bs As</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pr-6">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Los oradores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">El lugar y la fecha</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Conviértete en orador</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link--green" href="buy-tickets.html">Comprar tickets</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <?php include_once("layout/nav.php"); ?>
 
     <main>
         <section class="banner">
@@ -55,8 +24,8 @@
                             conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer
                             nivdel que tenemos para tí. Te esperamos!</p>
                         <div class="flex-buttons">
-                            <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                            <button type="button" class="btn btn-success">Comprar tickets</button>
+                            <a href='#speakers' type="button" class="btn btn-outline-light">Quiero ser orador</a>
+                            <a href="buy-tickets.php" type="button" class="btn btn-success">Comprar tickets</a>
                         </div>
                     </div>
                 </div>
@@ -125,10 +94,10 @@
             </div>
         </section>
 
-        <section class='become-section'>
+        <section class='become-section' id="speakers">
             <h2 class="become-section__title">Conviértete en un <span class="become-section__title-span"> orador</span></h2>
             <p>Anótate como orador para dar una <a href="#" class="become-section__link">charla ignite</a>. Cuéntanos de qué quieres hablar!</p>
-            <form action="php/formulario.php" method="post">
+            <form action="php/become-speaker.php" method="post">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" name="nombre" required>
                     <input type="text" class="form-control" placeholder="Apellido" aria-label="Server" name="apellido" required>
@@ -142,22 +111,8 @@
         </section>
     </main>
 
-    <footer class="main-footer">
-        <ul>
-            <footer class="main-footer">
-                <ul class="main-footer__links">
-                    <li><a href="#" class="main-footer__link">Preguntas frecuentes</a></li>
-                    <li><a href="#" class="main-footer__link">Contáctanos</a></li>
-                    <li><a href="#" class="main-footer__link">Prensa</a></li>
-                    <li><a href="#" class="main-footer__link">Conferencias</a></li>
-                    <li><a href="#" class="main-footer__link">Términos y condiciones</a></li>
-                    <li><a href="#" class="main-footer__link">Privacidad</a></li>
-                    <li><a href="#" class="main-footer__link">Estudiantes</a></li>
-                </ul>
-            </footer>
-        </ul>
-    </footer>
-
+    <?php include_once("layout/footer.php"); ?>
+    
 </body>
 
 </html>
