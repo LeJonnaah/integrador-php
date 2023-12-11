@@ -36,30 +36,30 @@
         <div class="ticket-form">
             <h1 class="ticket-form__title">Venta</h1>
             <h2 class="ticket-form__value">Valor de ticket $200</h2>
-            <form>
+            <form method="post" action="php/buy-tickets.php">
                 <div class="row mb-3">
                     <div class="col-md-6">
-                        <input type="text" class="form-control" id="inputName" placeholder="Nombre" required>
+                        <input type="text" class="form-control" id="inputName" placeholder="Nombre" name="nombre" required>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" id="inputLastName" placeholder="Apellido" required>
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Apellido" name="apellido" required>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-12">
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Correo" required>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Correo" name="correo" required>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="inputQuantity" class="form-label">Cantidad</label>
-                            <input type="number" class="form-control" id="inputQuantity" placeholder="Cantidad" min="1" max="10" required>
+                            <input type="number" class="form-control" id="inputQuantity" placeholder="Cantidad" min="1" max="10" name="cantidad" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <label for="inputCategory" class="form-label">Categoría</label>
-                        <select class="form-select" id="inputCategory" required>
+                        <select class="form-select" name="categoria" id="inputCategory" required>
                             <option value="" disabled selected hidden>Selecciona una categoría</option>
                             <option value="student">Estudiante</option>
                             <option value="trainee">Trainee</option>
@@ -73,6 +73,7 @@
                 <div class="ticket-form__buttons">
                     <button type="reset" class="ticket-form__button btn btn-success">Borrar</button>
                     <button type="button" id="resume-button" class="ticket-form__button btn btn-success">Resumen</button>
+                    <button type="submit" id="buy-button" class="ticket-form__button btn btn-success">Comprar</button>
                 </div>
             </form>
         </div>
