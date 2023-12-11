@@ -1,8 +1,8 @@
 <?php
 $servidor = "localhost";
-$usuario = "root";
-$contraseña = "root";
-$baseDeDatos = "integradorphp";
+$usuario = "id21505920_root";
+$contraseña = "Jx9p#4sLqR2t";
+$baseDeDatos = "id21505920_integradorphp";
 
 
 $conexion = mysqli_connect($servidor, $usuario, $contraseña, $baseDeDatos);

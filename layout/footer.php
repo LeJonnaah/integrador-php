@@ -1,4 +1,4 @@
-<footer class="main-footer">
+<footer class="main-footer" style="margin-top: auto;">
     <ul>
         <footer class="main-footer">
             <ul class="main-footer__links">
